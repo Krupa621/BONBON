@@ -1,0 +1,111 @@
+/* =========Product View ============= */
+/*  product increment decrement start */
+.quantity-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+}
+
+.quantity-field .value-button {
+    border: 1px solid #000;
+    margin: 0px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.quantity-field .value-button:hover {
+    background: transparent;
+}
+
+.quantity-field .value-button:active {
+    background: transparent;
+}
+
+.quantity-field .decrease-button {
+    margin-right: -4px;
+}
+
+.quantity-field .increase-button {
+    margin-left: -4px;
+}
+
+.quantity-field .number {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 57px;
+    height: 32px;
+}
+
+.quantity-field .number::selection {
+    background: none;
+}
+/*  product increment decrement end */
+/* accordian atart */
+/* .accordian-container {
+    height: 1512px !important;
+} */
+.accordian-wrraper-part {
+    padding: 120px 0;
+}
+.list li {
+    list-style-type: none;
+    padding: 0;
+}
+.list-heading {
+    background: transparent;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    position: relative;
+
+    width: 100%;
+}
+.list-heading:before {
+    background: black;
+    content: '';
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+}
+.list-heading:after {
+    background: black;
+    content: '';
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 14px;
+}
+.list-heading.active:before {
+    transform: rotate(0deg);
+}
+.list-heading.active h2,
+.list-heading:focus h2 {
+    position: relative;
+    color: black;
+}
+.list-text {
+    /* background: #d6d6d6; */
+    display: none;
+    overflow: hidden;
+}
+/* accordian end */
+.rectangle-size {
+    width: 40px;
+    height: 40px;
+}
